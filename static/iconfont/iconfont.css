@@ -7,6 +7,10 @@
   url('iconfont.svg?t=1574909918777#iconfont') format('svg'); /* iOS 4.1- */
 }
 
+@font-face {font-family: Merriweather;
+  src: url("./Merriweather.ttf");
+}
+
 .icon-yinhao:before {
   content: "\e654";
 }
