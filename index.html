@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./static/iconfont/iconfont.css">
+<style>
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.box {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to top left, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+}
+
+.box h1 {
+    font-size: 92px;
+    letter-spacing: 2.4px;
+    color: #fff;
+    text-shadow: 0 10px 0 #000;
+    text-align: center;
+}
+
+.text-box {
+    position: relative;
+    width: 450px;
+    background-color: #fff;
+    font-family: iconfont;
+    font-size: 20px;
+    color: #23d5ab;
+    padding: 30px;
+    border-radius: 3px;
+}
+
+.pic-box {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 50px;
+}
+
+.pic {
+    position: relative;
+    border: 8px solid #fff;
+}
+
+.pic-des {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    opacity: 0;
+}
+
+.pic-des:hover {
+    opacity: 1;
+}
+
+.pic-des .read-more {
+    width: 120px;
+    margin: 0 auto;
+    line-height: 30px;
+    background-color: #000;
+}
+
+.pic .empire {
+    background-color: rgba(58, 1, 132, 0.44); 
+}
+
+.pic .liberty {
+    background: rgba(255, 231, 179, 0.3);
+}
+
+.pic .liberty span {
+    display: inline-block;
+    width: 70%;
+    margin: 20px auto 0;
+    color: #000;
+    border-bottom: 1px solid #000;
+    padding-bottom: 15px;
+}
+
+.pic .liberty i {
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 80%;
+    color: #000;
+}
+
+.mid-pic {
+    margin: 0 10px;
+}
+
+.pic img {
+    width: 100%;
+    height: 100%;
+}
+
+.description {
+    position: relative;
+    width: 500px;
+    column-count: 3;
+    padding: 20px 20px;
+    margin-bottom: 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-family: serif;
+    font-size: 16px;
+    word-break: break-all;
+}
+
+.description::before {
+    position: absolute;
+    top: -40px;
+    left: 240px;
+    content: "";
+    border: 20px solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+</style>    
+</head>
+<body>
+  <div class="box">
+    <h1>CSS3 实战练习</h1>
+    <div class="text-box">
+      <p class="text icon-yinhao icon-quotation"> 
+        Dream what you want to dream; go where you 
+        want to go;be what you want be, because you 
+        have only one life and one chance to do all 
+        the things you want to do.
+      </p>
+    </div>
+    <div class="pic-box">
+      <div class="pic">
+        <img src="./static/image/empire-state.png" alt="empire-state" />
+        <div class="pic-des empire">
+          <p>EMPIRE STATE</br></br>
+            <i>
+            A cool description of some sort between 
+            these tags.I am so cool and awesomely awesome
+            </i>
+          </p>
+          <div class="read-more">
+            READ MORE
+          </div>
+        </div>
+      </div>
+      <div class="pic mid-pic">
+        <img src="./static/image/midtown.png" alt="midtown" />
+        <div class="pic-des midtown">
+          <p>MIDTOWN</br></br>
+            <i>
+            A descrip of some sort between 
+            these tags.I am so cool and awesomely awesome
+            </i>
+          </p>
+          <div class="read-more">
+            READ MORE
+          </div>
+        </div>
+      </div>
+      <div class="pic">
+        <img class="last-pic" src="./static/image/liberty.png" alt="liberty" />
+        <div class="pic-des liberty">
+          <span>THE ONLY LIVING BOY IN NEW YORK</span></br>
+          <i>
+          Words and such,a whole more of muh flippin'words
+          </i>
+          <div class="read-more">
+            READ MORE
+          </div>  
+        </div>
+      </div>
+    </div>
+    <div class="description">
+      Larem ipsum dolor sit amct, conscctetur 
+      adipisicing clit, scd do ciusmod tcmpor
+      incididunt ut laborc ct doiore magna 
+      aliqua. </br></br>
+      Ut cnim ad minim veniam,quis 
+      nosrrud excrcitation u Uamco laboris 
+      nisi ut aliquip ex ca comrruxlo conscqu
+      at.</br></br>
+      Ouis autc irure dolor in reprchcndcrit 
+      in voluptatc vclit esse cillum dolorc 
+      cu fugiat nulla pariatur.Exccptcur sint 
+      occaccai cupidatat non proident, sunt
+      in culpa qui officia dcscrunt mollit anim 
+      id cst laborum.
+    </div>
+
+
+  </div>  
+    
+</body>
+</html>
